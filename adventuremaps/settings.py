@@ -26,16 +26,17 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
-#'django-insecure-)5vkoc$phf%x*no9b$u8&5do(p&*900%k4=v@+v*z0hjpf3ef*'
+# 'django-insecure-)5vkoc$phf%x*no9b$u8&5do(p&*900%k4=v@+v*z0hjpf3ef*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ['adventure-maps.herokuapp.com', 'localhost']
 
-#['8000-shadeofpurple79-adventur-qhbafzqv6f.us2.codeanyapp.com']
+# ['8000-shadeofpurple79-adventur-qhbafzqv6f.us2.codeanyapp.com']
 
 
 # Application definition
