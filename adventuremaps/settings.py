@@ -35,8 +35,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['adventure-maps.herokuapp.com', 'localhost']
-
-# ['8000-shadeofpurple79-adventur-qhbafzqv6f.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['8000-shadeofpurple79-adventur-qhbafzqv6f.us2.codeanyapp.com']
 
 
 # Application definition
