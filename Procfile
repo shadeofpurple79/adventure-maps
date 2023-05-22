@@ -1,1 +1,1 @@
-web: gunicorn adventure-maps.wsgi
+web: gunicorn adventuremaps.wsgi
