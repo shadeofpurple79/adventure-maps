@@ -17,8 +17,8 @@ class Destination(models.Model):
     # class Meta:
     #     ordering = ['-created_on']
 
-    def _str_(self):
-        return self.title
+    # def _str_(self):
+    #     return self.title
 
 
 class Food(models.Model):
@@ -29,5 +29,5 @@ class Food(models.Model):
     # class Meta:
     #     ordering = ['-created_on']
 
-    def _str_(self):
-        return self.title
+    # def _str_(self):
+    #     return self.title
