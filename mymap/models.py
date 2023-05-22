@@ -22,7 +22,7 @@ class Destination(models.Model):
 
 
 class Food(models.Model):
-    destination = models.ForeignKey(Destination)
+    destination = models.ForeignKey(Destination, on_delete=models.CASCADE)
     name_of_food = models.CharField(max_length=200)
     food_image = CloudinaryField('image', default='placeholder')
 
