@@ -4,7 +4,7 @@ from cloudinary.models import CloudinaryField
 
 
 class Destination(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    # user = models.ForeignKey(User, on_delete=models.CASCADE)
     city = models.CharField(max_length=200)
     country = models.CharField(max_length=200)
     month_visited = models.DateField
@@ -14,8 +14,8 @@ class Destination(models.Model):
     my_experience = models.BooleanField
     destination_image = CloudinaryField('image', default='placeholder')
 
-    class Meta:
-        ordering = ['-created_on']
+    # class Meta:
+    #     ordering = ['-created_on']
 
     def _str_(self):
         return self.title
@@ -26,8 +26,8 @@ class Food(models.Model):
     name_of_food = models.CharField(max_length=200)
     food_image = CloudinaryField('image', default='placeholder')
 
-    class Meta:
-        ordering = ['-created_on']
+    # class Meta:
+    #     ordering = ['-created_on']
 
     def _str_(self):
         return self.title
