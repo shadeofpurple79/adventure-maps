@@ -9,7 +9,7 @@ class Destination(models.Model):
     country = models.CharField(max_length=200)
     month_visited = models.DateField
     year_visited = models.DateField
-    month_to-visit = models.DateField
+    month_tovisit = models.DateField
     year_to_visit = models.DateField
     my_experience = models.BooleanField
     destination_image = CloudinaryField('image', default='placeholder')
