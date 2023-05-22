@@ -4,8 +4,8 @@ from cloudinary.models import CloudinaryField
 
 
 class Destination(models.Model):
-    # user = models.ForeignKey(User, on_delete=models.CASCADE)
-    city = models.CharField(max_length=200)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    city = models.CharField(max_length=200, unique=True)
     country = models.CharField(max_length=200)
     month_visited = models.DateField
     year_visited = models.DateField
@@ -23,7 +23,7 @@ class Destination(models.Model):
 
 class Food(models.Model):
     destination = models.ForeignKey(Destination, on_delete=models.CASCADE)
-    name_of_food = models.CharField(max_length=200)
+    name_of_food = models.CharField(max_length=200, unique=True)
     food_image = CloudinaryField('image', default='placeholder')
 
     # class Meta:
