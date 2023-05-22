@@ -4,7 +4,7 @@ from cloudinary.models import CloudinaryField
 
 
 class Destination(models.Model):
-    user = models.ForeignKey(User)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     city = models.CharField(max_length=200)
     country = models.CharField(max_length=200)
     month_visited = models.DateField
